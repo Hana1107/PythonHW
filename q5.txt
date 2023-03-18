@@ -1,6 +1,6 @@
 1. Does the change inside increment_int_a change the variable a after the function call?
-- The change inside the function does not remain after the function call because the parameter that is passed into the function is an object but its value change in the function does not affect the value outside of it.
+- The change inside the function does not remain after the function call because the parameter that is passed into the function is a value type therefore its value change in the function does not affect the value outside of it.
 2. Does the change inside increment_int_b change the variable b after the function call?
 - The change inside the function remains after the function call because the parameter that is passed into the function is a reference.
 3. If they differ answer why? If not why not?
-- They differ in answers because the parameter of the first function is an object while the parameter of the second function is a reference.
+- They differ in answers because the parameter of the first function is a value type while the parameter of the second function is a reference. The reference values can be manipulated inside a function like a global variable, however value types can't be due to its limited scope only inside of a function, meaning the history of value change only remains inside a function but does not linger once getting out from the function call.
