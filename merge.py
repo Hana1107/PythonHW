@@ -21,6 +21,4 @@ def merge(first, second):
 
     return sorted
 
-list_one = [1,5,9]
-list_two = []
-print(merge(list_one, list_two))
+
